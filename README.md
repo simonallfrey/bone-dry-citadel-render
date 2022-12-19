@@ -1,15 +1,22 @@
 # README
 
-This is the [Express](https://expressjs.com) [Hello world](https://expressjs.com/en/starter/hello-world.html) example on [Render](https://render.com).
+2022-12-19 heroku shut down free tier last month so move to render.
+See https://github.com/simonallfrey/dry-citadel-63535 for docs.
 
-The app in this repo is deployed at [https://express.onrender.com](https://express.onrender.com).
+
+entrypoint is now:
+
+https://bone-dry-citadel-render.onrender.com/sa/<usermail>/<password>
 
 ## Deployment
 
-See https://render.com/docs/deploy-node-express-app or follow the steps below:
+
+first build at:
+https://dashboard.render.com/select-repo?type=web
 
 Create a new web service with the following values:
   * Build Command: `yarn`
   * Start Command: `node app.js`
 
-That's it! Your web service will be live on your Render URL as soon as the build finishes.
+rebuild existing at:
+https://dashboard.render.com/
