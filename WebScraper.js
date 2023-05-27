@@ -46,8 +46,10 @@ async function getCookies( login, password) {
 
   // Авторизация на heatmap-external-a.strava.com/auth
   const page2 = await browser.newPage()
+  console.log(`In getCookies: got newPage`)
   await page2.setCookie(...sessionFourCookie)
-  await page2.goto('https://heatmap-external-a.strava.com/auth',{timeout: 0})
+  console.log(`In getCookies: set sessionFourCookie for extern :${sessionFourCookie}`)
+  await page2.goto('https://heatmap-external-a.strava.com/auth',{waituntil: 'networkidle2', timeout: 0})
   console.log(`In getCookies: got extern`)
   
 //  await page2.goto('https://www.strava.com/heatmap')
