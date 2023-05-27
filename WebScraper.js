@@ -92,9 +92,9 @@ async function getCookies( login, password) {
 
   let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <providers>
-	<provider id="10902" type="0" visible="true" background="-1">
-		<name>Simon Strava</name>
-		<mode>Simon Global Heatmap All</mode>
+	<provider id="10942" type="0" visible="true" background="-1">
+		<name>Simon Strava 5</name>
+		<mode>Simon Global Heatmap All 5</mode>
 		<countries>World</countries>
 		<url><![CDATA[https://heatmap-external-c.strava.com/tiles-auth/all/hot/{z}/{x}/{y}.png?v={ts}&Policy=${policy}&Key-Pair-Id=${keypairid}&Signature=${signature}]]></url>
 		<zoomPart>{z}-8</zoomPart>
