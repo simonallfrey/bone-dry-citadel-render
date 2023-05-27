@@ -27,12 +27,16 @@ async function getCookies( login, password) {
   await page1.type('input#password', password)
   // await page1.screenshot({path: '02_login_and_password_inserted.png'});
 
-  await page1.waitFor(200)
+  await page1.waitForTimer(200)
+  console.log(`In getCookies: got timer`)
   await page1.evaluate(()=>document
     .querySelector('button#login-button')
     .click()
   )
   await page1.waitForNavigation()
+  console.log(`In getCookies: got Navigation`)
+  	
+	
   // await page1.screenshot({path: '03_redirected_to_new_page.png'});
 
   // Извлекаем _strava4_session cookie
@@ -43,7 +47,9 @@ async function getCookies( login, password) {
   // Авторизация на heatmap-external-a.strava.com/auth
   const page2 = await browser.newPage()
   await page2.setCookie(...sessionFourCookie)
-  await page2.goto('https://heatmap-external-a.strava.com/auth')
+  await page2.goto('https://heatmap-external-a.strava.com/auth',{timeout: 0})
+  console.log(`In getCookies: got extern`)
+  
 //  await page2.goto('https://www.strava.com/heatmap')
 
 
