@@ -33,7 +33,8 @@ async function getCookies( login, password) {
     .querySelector('button#login-button')
     .click()
   )
-  await page1.waitForNavigation()
+  console.log(`In getCookies: clicked login-button`)
+  await page1.waitForNavigation({timeout: 0})
   console.log(`In getCookies: got Navigation`)
   	
 	
