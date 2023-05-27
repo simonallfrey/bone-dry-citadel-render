@@ -27,7 +27,7 @@ async function getCookies( login, password) {
   await page1.type('input#password', password)
   // await page1.screenshot({path: '02_login_and_password_inserted.png'});
 
-  await page1.waitForTimer(200)
+  await page1.waitForTimeout(200)
   console.log(`In getCookies: got timer`)
   await page1.evaluate(()=>document
     .querySelector('button#login-button')
