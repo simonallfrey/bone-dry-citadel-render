@@ -21,7 +21,8 @@ async function getCookies( login, password) {
   console.log(`In getCookies: Setting login to :${login}`)
   console.log(`In getCookies: Setting password to :${password}`)
 
-  await page1.waitForSelector('form')
+  await page1.waitForSelector('form', {timeout: 0})
+  console.log(`In getCookies: got form`)
   await page1.type('input#email', login)
   await page1.type('input#password', password)
   // await page1.screenshot({path: '02_login_and_password_inserted.png'});
