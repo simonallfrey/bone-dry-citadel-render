@@ -126,7 +126,7 @@ async function getCookies( login, password) {
 		</extraHeader>
 	</provider>
 	<provider id="10943" type="0" visible="true" background="-1">
-		<name>Simon Strava 5</name>
+		<name>Simon Strava Ride 5</name>
 		<mode>Simon Global Heatmap Ride 5</mode>
 		<countries>World</countries>
 		<url><![CDATA[https://heatmap-external-c.strava.com/tiles-auth/ride/hot/{z}/{x}/{y}.png?v={ts}&Policy=${policy}&Key-Pair-Id=${keypairid}&Signature=${signature}]]></url>
