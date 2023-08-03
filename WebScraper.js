@@ -148,6 +148,75 @@ async function getCookies( login, password) {
 			<![CDATA[ User-Agent#Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36 ]]>
 		</extraHeader>
 	</provider>
+	<provider id="10944" type="0" visible="true" background="-1">
+		<name>Simon Strava Run 5</name>
+		<mode>Simon Global Heatmap Run 5</mode>
+		<countries>World</countries>
+		<url><![CDATA[https://heatmap-external-c.strava.com/tiles-auth/run/hot/{z}/{x}/{y}.png?v={ts}&Policy=${policy}&Key-Pair-Id=${keypairid}&Signature=${signature}]]></url>
+		<zoomPart>{z}-8</zoomPart>
+		<zoomMin>8</zoomMin>
+		<zoomMax>23</zoomMax>
+		<tileSize>256</tileSize>
+		<tileScale dpi="0" multi="2.0" replace="19" />
+		<attribution>
+			<![CDATA[© 2019 Strava]]>
+		</attribution>
+		<extraHeader>
+			<![CDATA[ Connection#keep-alive ]]>
+		</extraHeader>
+		<extraHeader>
+			<![CDATA[ Referer#https://www.strava.com/heatmap ]]>
+		</extraHeader>
+		<extraHeader>
+			<![CDATA[ User-Agent#Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36 ]]>
+		</extraHeader>
+	</provider>
+	<provider id="10945" type="0" visible="true" background="-1">
+		<name>Simon Strava Water 5</name>
+		<mode>Simon Global Heatmap Water 5</mode>
+		<countries>World</countries>
+		<url><![CDATA[https://heatmap-external-c.strava.com/tiles-auth/water/hot/{z}/{x}/{y}.png?v={ts}&Policy=${policy}&Key-Pair-Id=${keypairid}&Signature=${signature}]]></url>
+		<zoomPart>{z}-8</zoomPart>
+		<zoomMin>8</zoomMin>
+		<zoomMax>23</zoomMax>
+		<tileSize>256</tileSize>
+		<tileScale dpi="0" multi="2.0" replace="19" />
+		<attribution>
+			<![CDATA[© 2019 Strava]]>
+		</attribution>
+		<extraHeader>
+			<![CDATA[ Connection#keep-alive ]]>
+		</extraHeader>
+		<extraHeader>
+			<![CDATA[ Referer#https://www.strava.com/heatmap ]]>
+		</extraHeader>
+		<extraHeader>
+			<![CDATA[ User-Agent#Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36 ]]>
+		</extraHeader>
+	</provider>
+	<provider id="10946" type="0" visible="true" background="-1">
+		<name>Simon Strava Winter 5</name>
+		<mode>Simon Global Heatmap Winter 5</mode>
+		<countries>World</countries>
+		<url><![CDATA[https://heatmap-external-c.strava.com/tiles-auth/winter/hot/{z}/{x}/{y}.png?v={ts}&Policy=${policy}&Key-Pair-Id=${keypairid}&Signature=${signature}]]></url>
+		<zoomPart>{z}-8</zoomPart>
+		<zoomMin>8</zoomMin>
+		<zoomMax>23</zoomMax>
+		<tileSize>256</tileSize>
+		<tileScale dpi="0" multi="2.0" replace="19" />
+		<attribution>
+			<![CDATA[© 2019 Strava]]>
+		</attribution>
+		<extraHeader>
+			<![CDATA[ Connection#keep-alive ]]>
+		</extraHeader>
+		<extraHeader>
+			<![CDATA[ Referer#https://www.strava.com/heatmap ]]>
+		</extraHeader>
+		<extraHeader>
+			<![CDATA[ User-Agent#Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36 ]]>
+		</extraHeader>
+	</provider>
 </providers>
 `
 
