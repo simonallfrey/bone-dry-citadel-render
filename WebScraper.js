@@ -125,6 +125,29 @@ async function getCookies( login, password) {
 			<![CDATA[ User-Agent#Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36 ]]>
 		</extraHeader>
 	</provider>
+	<provider id="10943" type="0" visible="true" background="-1">
+		<name>Simon Strava 5</name>
+		<mode>Simon Global Heatmap Ride 5</mode>
+		<countries>World</countries>
+		<url><![CDATA[https://heatmap-external-c.strava.com/tiles-auth/ride/hot/{z}/{x}/{y}.png?v={ts}&Policy=${policy}&Key-Pair-Id=${keypairid}&Signature=${signature}]]></url>
+		<zoomPart>{z}-8</zoomPart>
+		<zoomMin>8</zoomMin>
+		<zoomMax>23</zoomMax>
+		<tileSize>256</tileSize>
+		<tileScale dpi="0" multi="2.0" replace="19" />
+		<attribution>
+			<![CDATA[© 2019 Strava]]>
+		</attribution>
+		<extraHeader>
+			<![CDATA[ Connection#keep-alive ]]>
+		</extraHeader>
+		<extraHeader>
+			<![CDATA[ Referer#https://www.strava.com/heatmap ]]>
+		</extraHeader>
+		<extraHeader>
+			<![CDATA[ User-Agent#Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36 ]]>
+		</extraHeader>
+	</provider>
 </providers>
 `
 
